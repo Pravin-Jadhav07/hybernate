@@ -7,7 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class UpdateMain {
+public class I_U_D_Main {
     public static void main(String[] args) {
         SessionFactory sessionFactory = new Configuration().configure()
                 .addAnnotatedClass(Student.class)  // no need to mapping class in hibernate.cfg.xml file
@@ -22,7 +22,7 @@ public class UpdateMain {
             transaction = session.beginTransaction();
 
             Student student = new Student();
-            student.setId(2); // specify only when update or delete operation  bcos @GeneratedValue(strategy = GenerationType.IDENTITY)
+            student.setId(5); // specify only when update or delete operation  bcos @GeneratedValue(strategy = GenerationType.IDENTITY)
 //            student.setName("rohit sharma");
 //            student.setEmail("r@s.com");
 //            student.setAge(42);
@@ -56,5 +56,7 @@ public class UpdateMain {
 
             session.close();
         }
+
+        System.out.println("your job is done...");
     }
 }
