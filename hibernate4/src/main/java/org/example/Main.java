@@ -16,6 +16,7 @@ import org.hibernate.cfg.Configuration;
     b. level-2 cache
         - if we configure setup for level-2 (ehcache) cache
         - for that import some anotation javax version instead of jakarta
+        - add 2 more dependancies in pom.xml file and two propeties in hibernate.cfg file and add two annotation in Entity class.
         - for every session there is only one cache and both cache execute query only one time.
 */
 
