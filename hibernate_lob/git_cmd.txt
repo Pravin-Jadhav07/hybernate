@@ -1,0 +1,62 @@
+or create a new repository on the command line
+echo "# temp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Pravin-Jadhav07/temp.git
+git push -u origin main
+
+----------------------------------------------------------------------------------
+
+�or push an existing repository from the command line
+git remote add origin https://github.com/Pravin-Jadhav07/temp.git
+git branch -M main
+git push -u origin main
+
+----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+# git push origin main (main is branch)
+
+tagging:
+	git tag -a v1.0 -m "1st release"
+	git show v1.0 (it gives desc)
+	git push origin v1.0 (remote)
+
+copying project:
+	git clone https
+
+# git remote v 
+
+git branch:
+	git branch ( it shows local branches)
+	git branch --all( it show all branched local and remote)
+	git switch - ( shortcut for going back to branch)
+
+    creating branch:
+	1. git checkout --branch (-b) newBranchName ( first time )
+	   git checkout branchName (for switching)
+	2. git switch --create (-c) newBranchName (first time)
+	   git switch branchName ( for switching)
+	 
+    delete branch:
+	git branch -b branchName
+
+merge branch 
+	go to parent ( git switch main)
+	git merge childBranch
+
+
+	
